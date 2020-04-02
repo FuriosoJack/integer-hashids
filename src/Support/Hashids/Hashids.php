@@ -271,7 +271,8 @@ class Hashids implements HashidsInterface
             }
         }
 
-        return $ret[0];
+
+        return count($ret) > 0 ? $ret : $ret[0];
     }
 
     /**
